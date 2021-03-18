@@ -64,7 +64,7 @@ namespace StringCalculator.Tests
         }
 
         [Fact]
-        public void ReturnNegativeNumber_GivenNegativeNumber()
+        public void ThrowException_GivenNegativeNumber()
         {
             Exception ex = Assert.Throws<Exception>(() => sutCalculator.Add("2,-1"));
             Assert.Equal("negatives not allowed -1", ex.Message);
